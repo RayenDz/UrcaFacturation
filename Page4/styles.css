@@ -1,0 +1,144 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2F4F4F, #4B0082);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    direction: rtl;
+}
+
+header {
+    background-color: #1A1A1A;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.month-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.month {
+    background-color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px; /* عرض أقصى لكل عنصر */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: right;
+    margin: 10px;
+}
+
+.month:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.month h2 {
+    color: #FFD700;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column; /* ترتيب العناصر عمودياً */
+    gap: 15px; /* المسافة بين العناصر */
+}
+
+.button-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* توزيع المسافة بين النص والزّر */
+}
+
+.button-item p {
+    margin: 0;
+    flex: 1; /* يملأ المساحة المتاحة */
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #555;
+    color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    margin-left: 10px; /* مسافة بين النص والزّر */
+}
+
+.download-btn:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    display: inline-block;
+    background-color: #1A1A1A;
+    color: #FFD700;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 1.2em;
+}
+
+.pagination a.active, .pagination a:hover {
+    background-color: #FFD700;
+    color: #333;
+}
+
+footer {
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #FFF;
+}
+
+@media (max-width: 768px) {
+    .month {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .month {
+        width: 100%;
+    }
+}
+ 
