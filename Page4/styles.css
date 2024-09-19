@@ -1,3 +1,31 @@
+/* تنسيق الرأسية */
+header {
+    background-color: #2F4F4F; /* خلفية داكنة */
+    color: #fff; /* لون النص أبيض */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ظل خفيف */
+    border-bottom: 5px solid #FFD700; /* خط سفلي بلون ذهبي */
+}
+
+/* تنسيق العنوان الأول */
+header h1 {
+    font-size: 2.2em;
+    margin: 10px 0;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    line-height: 1.4; /* لزيادة المسافة بين السطور */
+}
+
+/* تنسيق خاص بالسطر الثاني */
+header h1:nth-child(2) {
+    font-size: 1.8em; /* حجم أصغر قليلاً للعناوين الثانوية */
+    font-weight: normal;
+    margin-top: 15px;
+    letter-spacing: 1.2px;
+}
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #2F4F4F, #4B0082);
