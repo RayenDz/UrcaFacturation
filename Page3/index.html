@@ -111,6 +111,24 @@
     <p>&copy; 2024 جميع الحقوق محفوظة | <a href="https://rayendz.github.io/UrcaFacturation/Page3/index.html">الصفحة السابقة</a> | <a href="https://rayendz.github.io/UrcaFacturation/Page4/index.html">الصفحة التالية</a></p>
     <p>تمت البرمجة من طرف ركاب عبدالقادر</p>
 </footer>
+<script>
+    // تعطيل النقر بزر الماوس الأيمن
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
 
+    // تعطيل التحديد
+    document.onselectstart = function () {
+        return false;
+    };
+
+    // تعطيل اختصارات لوحة المفاتيح مثل Ctrl+C
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C')) {
+            e.preventDefault();
+        }
+    });
+
+</script>
 </body>
 </html>
