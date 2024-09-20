@@ -1,172 +1,161 @@
-/* تنسيق الرأسية */
-header {
-    background-color: #2F4F4F; /* خلفية داكنة */
-    color: #fff; /* لون النص أبيض */
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* ظل خفيف */
-    border-bottom: 5px solid #FFD700; /* خط سفلي بلون ذهبي */
-}
-
-/* تنسيق العنوان الأول */
-header h1 {
-    font-size: 2.2em;
-    margin: 10px 0;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-    line-height: 1.4; /* لزيادة المسافة بين السطور */
-}
-
-/* تنسيق خاص بالسطر الثاني */
-header h1:nth-child(2) {
-    font-size: 1.8em; /* حجم أصغر قليلاً للعناوين الثانوية */
-    font-weight: normal;
-    margin-top: 15px;
-    letter-spacing: 1.2px;
-}
-
-
+/* ألوان عامة */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #2F4F4F, #4B0082);
+    background-color: #f8faff; /* خلفية بيضاء مع قليل من الأزرق الفاتح */
+    color: #333; /* لون النص غامق ومتوازن */
+    font-family: 'Roboto', sans-serif;
+    direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+    text-align: center; /* جعل النصوص في جميع الصفحة في المنتصف */
     margin: 0;
     padding: 0;
-    color: #fff;
-    direction: rtl;
 }
 
+/* الهيدر */
 header {
-    background-color: #1A1A1A;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: #2a9d8f; /* لون الخلفية */
+    color: #fff; /* لون النص */
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center; /* توسيط المحتويات أفقياً */
+    align-items: center; /* محاذاة العناصر عمودياً */
+    flex-direction: column; /* وضع العناصر عمودياً */
+    border-bottom: 5px solid #264653; /* حد أغمق لتحديد الهيدر */
+    position: relative;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-    letter-spacing: 2px;
+.header-img {
+    width: 50px; /* العرض المطلوب للصورة */
+    height: 100px; /* الطول المطلوب للصورة */
+    margin-bottom: 20px; /* مسافة أسفل الصورة */
 }
 
-section {
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+
+.header-img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* ظل خفيف حول الصورة */
 }
 
+.header-text {
+    text-align: center; /* جعل النص في وسط الهيدر */
+}
+
+h1, h2, h3 {
+    margin: 5px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #f4a261; /* لون برتقالي فاتح */
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #e76f51; /* لون أحمر مائل للبرتقالي */
+}
+
+/* الأقسام */
 .month-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center; /* توسيط الأقسام */
+    gap: 15px;
+    padding: 20px;
 }
 
 .month {
-    background-color: #333;
-    border-radius: 15px;
+    background-color: #f1faee; /* خلفية بيضاء فاتحة */
+    border: 1px solid #a8dadc; /* حد أزرق فاتح */
     padding: 20px;
-    width: 100%;
-    max-width: 300px; /* عرض أقصى لكل عنصر */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: right;
-    margin: 10px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    width: 80%; /* تحديد عرض الأقسام لتظهر في المنتصف */
+    text-align: center; /* توسيط النصوص داخل الأقسام */
 }
 
 .month:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px); /* حركة بسيطة عند التمرير */
 }
 
-.month h2 {
-    color: #FFD700;
-    font-size: 1.8em;
-    margin-bottom: 15px;
+h2 {
+    color: #264653; /* لون العنوان غامق وأنيق */
 }
 
+/* مجموعة الأزرار */
 .button-group {
     display: flex;
-    flex-direction: column; /* ترتيب العناصر عمودياً */
-    gap: 15px; /* المسافة بين العناصر */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* توسيط الأزرار */
 }
 
 .button-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* توزيع المسافة بين النص والزّر */
+    background-color: #e9c46a; /* خلفية صفراء مهدئة */
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #f4a261; /* حد برتقالي فاتح */
+    text-align: center;
+    width: 150px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.button-item p {
-    margin: 0;
-    flex: 1; /* يملأ المساحة المتاحة */
+.button-item:hover {
+    background-color: #f4a261; /* تغيير لون الزر عند التمرير */
+    transform: translateY(-3px); /* حركة بسيطة عند التمرير */
 }
 
 .download-btn {
-    display: inline-block;
-    background-color: #555;
-    color: #FFD700;
-    padding: 10px 20px;
-    border-radius: 5px;
+    display: block;
+    background-color: #2a9d8f; /* أزرق مائل للأخضر */
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-    margin-left: 10px; /* مسافة بين النص والزّر */
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 .download-btn:hover {
-    background-color: #FFD700;
-    color: #333;
+    background-color: #264653; /* لون أغمق عند التمرير */
 }
 
+/* ترقيم الصفحات */
 .pagination {
     text-align: center;
-    margin: 20px 0;
+    padding: 20px;
 }
 
 .pagination a {
-    display: inline-block;
-    background-color: #1A1A1A;
-    color: #FFD700;
+    color: #264653; /* لون أزرق غامق */
     padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
     margin: 0 5px;
-    font-size: 1.2em;
+    background-color: #fff;
+    border: 1px solid #264653;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.pagination a.active, .pagination a:hover {
-    background-color: #FFD700;
-    color: #333;
+.pagination a:hover, .pagination a.active {
+    background-color: #264653;
+    color: #fff;
+    transform: translateY(-3px);
 }
 
+/* الفوتر */
 footer {
-    background-color: #1A1A1A;
-    color: white;
+    background-color: #2a9d8f; /* نفس لون الهيدر */
+    color: #fff;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
-
-footer a {
-    color: #FFD700;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    color: #FFF;
-}
-
-@media (max-width: 768px) {
-    .month {
-        width: 45%;
-    }
-}
-
-@media (max-width: 576px) {
-    .month {
-        width: 100%;
-    }
-}
- 
